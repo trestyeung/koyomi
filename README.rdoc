@@ -1,0 +1,19 @@
+= Koyomi
+
+== What is This
+
+This Koyomi library adds some features of traditional East Asian calendar
+system related to the Yin Yang(陰陽) and the Wu Xing(五行) to the +Date+ class.
+
+=== New Methods
+
+* +stem+:: returns the heavenly stem(干) of the date.
+* +branch+:: returns the earthly branch(支) of the date.
+* +solar_term+ returns the solar term(節気) which the date is in.
+
+== References
+
+* "Sexagenary cycle":http://en.wikipedia.org/wiki/Sexagenary_cycle
+* "Solar term":http://en.wikipedia.org/wiki/Solar_term
+* "こよみのページ":http://koyomi.vis.ne.jp/ (Japanese; CSV files in data/
+  are taken from this page)
