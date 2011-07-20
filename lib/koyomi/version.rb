@@ -1,3 +1,3 @@
 module Koyomi
-  VERSION = "0.0.1" #:nodoc:
+  VERSION = "0.0.2" #:nodoc:
 end
