@@ -2,7 +2,7 @@
 require 'koyomi/solar_term'
 
 describe Koyomi::SolarTerm do
-  describe '#for_date' do
+  describe '.for_date' do
     context '2011-07-18' do
       subject { Koyomi::SolarTerm.for_date(Date.parse('2011-07-18')) }
       its(:name) { should == '小暑' }
