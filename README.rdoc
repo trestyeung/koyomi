@@ -7,9 +7,10 @@ system related to the Yin Yang(陰陽) and the Wu Xing(五行) to the +Date+ cla
 
 === New Methods
 
-* +stem+:: returns the heavenly stem(干) of the date.
-* +branch+:: returns the earthly branch(支) of the date.
-* +solar_term+ returns the solar term(節気) which the date is in.
++stem+:: returns the heavenly stem(干) of the date.
++branch+:: returns the earthly branch(支) of the date.
++solar_term+:: returns the solar term(節気) which the date is in.
++doyo+:: returns the doyo(土用) if the date is in one, nil otherwise.
 
 == References
 
