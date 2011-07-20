@@ -49,7 +49,7 @@ module Koyomi
       # List of solar terms.  Each element is a 2-element array in form of [ first-date, name ].
       SOLAR_TERM_LIST = Dir["#{File.join(File.dirname(__FILE__), '../../data')}/skji20{1[1-9],20}.csv"].inject([]) do |days, file|
         CSV.open(file, headers: true, return_headers: false, encoding: 'Windows-31J:UTF-8') do |csv|
-          days + csv.map {|row| [::Date.new(*row.values_at('年', '月', '日').map(&:to_i)), row['節気(定気)']] }
+          days + csv.map {|row| [::Date.new(*row.values_at('年', '月', '日').map(&:to_i)), row['節気(定気)']] }.reject{|r|/土用入\z/ =~ r[1]}
         end
       end #:nodoc:
 
