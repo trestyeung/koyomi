@@ -1,9 +1,13 @@
 require 'bundler/gem_tasks'
-require 'rspec/core/rake_task'
 require 'rdoc/task'
 
-RSpec::Core::RakeTask.new do |t|
-  t.verbose = false
+begin
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new do |t|
+    t.verbose = false
+  end
+rescue LoadError
+  # ignore
 end
 
 RDoc::Task.new do |t|
